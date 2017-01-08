@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8" />
+
+	<title>Elox Documentation</title>
+	
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+
+<style type="text/css">
+
+/* Reset
+======================================================= */
+
+div, section, article, header, footer, aside, time, nav, figure, img, blockquote,
+table, tbody, tr, td, textarea, input, ul, li {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Body
+======================================================= */
+
+body {
+	margin: 50px 0;
+	background-color: #e6e6e6;
+
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	line-height: 1.4em;
+	color: rgb(30,30,30);
+}
+
+p {
+	margin: 5px 0 15px 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* Container
+======================================================= */
+
+#wrapper {
+	margin: 0px auto;
+	width: 800px;
+	padding: 40px;
+	border: 1px solid rgba(0,0,0,.3);
+	box-shadow: 0 0 15px 5px rgba(0,0,0,.1);
+	background-color: #fff;
+}
+
+.title {
+	margin: 0;
+	padding: 1em 0 0.5em 0;
+	border-bottom: 3px solid rgb(40,115,200);
+
+	letter-spacing: -0.03em;
+}
+
+.sub-title {
+	margin: 0.5em 0 0 0;
+
+	font-weight: 300;
+}
+
+.sub-title {
+
+}
+
+.preview {
+	display: block;
+	width: 590px;
+	height: 300px;
+	margin: 40px auto;
+}
+
+nav {
+	margin: 0 0 40px 0;
+	padding: 20px 10px;
+	background: rgba(0,0,0,0.05);
+}
+
+.nav-first,
+.nav-second {
+	list-style-position: inside;
+
+	font-weight: 600;
+}
+
+.nav-first li,
+.nav-second li {
+	margin: 5px 0;
+}
+
+.nav-first {
+	margin: 0 0 0 20px;
+}
+
+.nav-second {
+	margin: 0;
+	font-weight: 400;
+}
+
+ol {
+	list-style-position: inside;
+}
+
+.retina-resolutions {
+	margin: 0 auto;
+	padding: 20px 0;
+	border-collapse: separate;
+	border-spacing: 8px;
+
+	font-size: 0.8em;
+}
+
+.retina-resolutions td {
+	padding: 2px 5px;
+}
+
+.retina-resolutions tr:nth-child(even) {
+	background: rgba(0,0,0,0.1);
+}
+
+.retina-resolutions tr:nth-child(odd) {
+	background: rgba(0,0,0,0.2);
+}
+
+.retina-resolutions tr:first-child {
+	background: rgba(0,0,0,0.2);
+
+	font-weight: 600;
+}
+
+.social-media-icons {
+	width: 100%;
+	margin: 0 auto;
+	padding: 20px 0;
+	border-collapse: separate;
+	border-spacing: 8px;
+
+	font-size: 0.8em;
+}
+
+.content-list {
+
+}
+
+.content-list li {
+	font-weight: bold;
+}
+
+.code {
+	position: relative;
+	overflow: hidden;
+	background: rgb(230,230,230);
+	padding: 20px;
+	border: 1px solid rgba(0,0,0,0.1);
+	box-shadow: 0 0 3px rgba(0,0,0,0.15);
+}
+
+.code:before {
+	position: absolute;
+	left: 10px;
+	bottom: 0;
+	content: 'Hover the box with your mouse to see the whole sourcecode';
+
+	font-size: 0.8em;
+	color: rgb(100,100,100);
+}
+
+.code:focus,
+.code:active,
+.code:hover {
+	position: relative;
+	width: 120%;
+}
+
+.highlight {
+	color: rgb(40,115,200);
+}
+
+a {
+	color: rgb(40,115,200);
+}
+
+</style>
+
+</head>
+
+<body>
+
+	<div id="wrapper">
+
+		<h1 class="title">Elox - Documentation</h1>
+		<h2 class="sub-title"><span class="highlight">Thanks</span> for purchasing my template!</h2>
+
+		<img class="preview" src="assets/preview_big.jpg" wisth="590" height="300" alt="Preview Image of the Template">
+
+		<nav>
+
+			<ol class="nav-first" type="I">
+
+				<li><a href="#custom">Template Customization</a>
+
+					<ol class="nav-second" type="1">
+
+						<li><a href="#color-scheme">Skin and Color Scheme</a></li>
+
+						<li><a href="#background-picture">Background Picture</a></li>
+
+						<li><a href="#title">Avatar + Social Media</a></li>
+
+						<li><a href="#avatar">Personal Facts</a></li>
+
+						<li><a href="#resume-cv">Resume + vCard</a></li>
+
+						<li><a href="#twitter">Twitter Widget</a></li>
+
+						<li><a href="#intro">Title + Introduction</a></li>
+
+						<li><a href="#edu-emplo">Education/Employment</a></li>
+
+						<li><a href="#skills">Skills</a></li>
+
+						<li><a href="#portfolio">Portfolio</a></li>
+
+						<li><a href="#contact-form">Contact Form + Google Maps</a></li>
+
+					</ol>
+
+				</li>
+
+				<li><a href="#credits">Credits</a></li>
+
+			</ol>
+
+		</nav>
+
+		<section class="content">
+
+			<h3><a name="custom">I. Template Customization</a></h3>
+
+			<p>This documentation is a step by step guide to customize and extend the XXX Template.<br> For this purpose you will need a code editor. I recommend to use <a href="http://www.sublimetext.com/2">Sublime Text 2</a>, but you can use any other as well.<br> Now take about <strong>20-30 minutes</strong> and the template is ready to go!</p>
+
+			<ol class="content-list">
+
+			<li><a name="color-scheme">Skin and Color Scheme</a></li>
+			<p>Go to the <a href="http://themeforest.nilzone.org/demo/elox">demo</a> and select your skin and color scheme.<br>
+			To apply the skin and color scheme you have to open the index.html file and edit around line 15 the "href" attribute for the second stylesheet file. 
+<pre class="code">
+&lt;link rel="stylesheet" type="text/css" href="<strong>css/d_green.css</strong>"&gt;
+</pre>
+			Replace "d" with the skin you have chosen (d for dark and l for light) and "green" with the color you have selected.
+			</p>
+
+			<li><a name="background-picture">Background Picture</a></li>
+			<p>If you want to edit the background picture behind the avatar you have to open your css file yo have linked to in the first step. Open the css file and find the declaration for <strong>.container-left-picture</strong>. This must be anywhere around line 200. Edit the url of the background property to link to your image.<br>
+			<strong>Note:</strong> If you want to create the same blur effect as you can see in the demo use the Photoshop filter "Gaussian Blur" with the radius of 3 (see the example file in the <strong>PSD</strong> folder).</p>
+
+			<li><a name="title">Avatar + Social Media</a></li>
+			<p>To apply your own picture open the PSD folder and open the included file <strong>Avatar.psd</strong>. Delete the "avatar" layer, add your photo, mask it with the frame layer and resize it that it fits perfectly into the frame.<br>
+			Afterwards save the image as <strong>avatar.png</strong> file to the images-folder.<br>
+			To edit the links to you <strong>Social Media sites</strong> you have to open the index.html file and scroll down to around line 50 and edit the list with the class name "social-media". Place the link to the specific site in the href-attribute and choose the icon class name out of the following list:</p>
+
+			<a href="assets/icons.png"><img src="assets/icons.png"></a>
+
+			<li><a name="avatar">Personal Facts</a></li>
+			<p>Now scroll down to around line 70 and edit the list with the class name "personal-info". Add or remove the list items and edit the content inside the span elements.</p>
+
+			<li><a name="resume-cv">Resume + vCard</a></li>
+			<p>If you want to provide the posibility for your users to download your Resume or your vCard scroll down to around line 86. Edit the href attributes of the link for the first button to direct to your Resume and the link of the second button to direct to your vCard.<br> If you want to display only one button remove the whole div surrounding the buttons.</p>
+
+			<li><a name="twitter">Twitter Widget</a></li>
+			<p>The Twitter widget has changed. In the older versions of Elox you had to edit the Twitter user name you want to display in the custom.js file.<br>Since Twitter has changed its API for fetching Tweets we have to use the Twitter widget delivered by Twitter ifself.<br>Login to your Twitter account and go to the <a href="https://twitter.com/settings/widgets">widgets section</a>. Click on <strong>"Create new"</strong>, leave all options as they are and click below on the <strong>"Create widget"</strong> button. Now as you may have noticed the URL has changed. There must be a long number in it as in the following example:<br><br> https://twitter.com/settings/widgets/<strong>352092632815656969</strong>/edit?focus_textarea=1&notice=WIDGET_CREATED<br><br> Copy that number to your clipboard.<br>
+			Now open the <strong>index.html</strong> file and scroll down to around line 105. Replace the value of the <strong>data-widget-id</strong> with your copyed number and type in the Twitter user you want to follow in the <strong>data-screen-name</strong> attribute.<br>Save the index.html and the widget should work fine!</p>
+
+			<li><a name="intro">Title + Introduction</a></li>
+			<p>To edit the title of the template open the <strong>index.html</strong> again and go to around line 9. Edit the title to what you think fits best for you. The same goes for the actual title which will be displayed in the browser. For this reason scroll down to around line 138. Edit the title and just below the introduction text.</p>
+
+			<li><a name="edu-emplo">Education/Employment</a></li>
+			<p>The construction for the education and employment section follows basically the same pattern. </p>
+<pre class="code">
+&lt;li&gt;
+  &lt;div class="time"&gt;2012-present&lt;/div&gt;
+  &lt;div class="station"&gt;Apple Inc.&lt;/div&gt;
+  &lt;div class="position"&gt;Junior Art Director&lt;/div&gt;
+  &lt;div class="position-desc"&gt;Stet clita kasd gubergren, no sea takimata <br>sanctus est Lorem ipsum dolor sit amet.&lt;/div&gt;
+&lt;/li&gt;
+</pre>			
+			<p>For every element you want to add to the education/employment list you have to add a new list item (&lt;li&gt;&lt;/li&gt;) with the div's "time", "station", "position" and optional "position-desc" inside of it. Just as the example above.<br>
+			You can find the employment list around line 153 and the education list around line 180.</p>
+
+			<li><a name="skills">Skills</a></li>
+			<p>To show you visitors your skills you have in various fields you can either use the table style or the circle style.<br>For the table style layout scroll down to around line 220. Every &lt;tr&gt;&lt;/tr&gt; element represents a single skill you want to present.</p>
+<pre class="code">
+&lt;tr&gt;
+  &lt;td class="item"&gt;&lt;div class="outer-bar"&gt;<br>&lt;div class="inner-bar" style="width:<strong>90%</strong>;"&gt;<strong>HTML</strong>&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+</pre>
+			<p>Just edit the width and the declaration. Either remove or add a &lt;tr&gt;&lt;/tr&gt; element to the table to present more or less skills.<br><br>
+			For the circled styled skills presentation you can use the following template:
+			</p>
+<pre class="code">
+&lt;li&gt;	
+  &lt;div class="pie-container"&gt;
+    &lt;div class="pie"&gt;&lt;div class="pie-bar"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="pie-inner" data-height="<strong>85</strong>"&gt;
+    &lt;span&gt;<strong>85%</strong>&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;div class="pie-desc"&gt;<strong>Management</strong>&lt;/div&gt;
+&lt;/li&gt;
+</pre>
+			<p>You can find the circled presentation around line 240. Add or remove the list items and edit the <strong>data-height</strong> attribute, the value between the span-tags and the description.</p>
+
+			<li><a name="portfolio">Portfolio</a></li>
+
+			<p><img src="assets/portfolio.png"></p>
+
+			<p>The image above shows the basic layout structure for the portfolio. Each row contains one or two images.<br>When you place two "g-2" container beside each other each container will take 50% of the whole width. Inside of those g-* containers the actual portfolio items are placed.<br>You can find the portfolio starting at around line 270.<br>First you have to insert the image that will be shown on the screen and then you have to link to the original image. After that you have to give that item a headline (&lt;h4&gt;&lt;/h4&gt;) and optional a short description. You can add a link for your visitors to the actual project so that they can take a closer look.</p>
+
+			<li><a name="contact-form">Contact Form + Google Maps</a></li>
+			<p>Last but not least we want to set up the Contact Form and Google Maps.<br>
+			First of all you have to go to the <strong>inc</strong> folder and open the <strong>contact_form.php</strong> file. Go to line 9 and type in your email address.<br>
+			To display the right address in Google Maps you have to go to the <strong>js</strong> folder and open the <strong>custom.js</strong> file. Go to line 5 and type in your address.</p>
+
+			</ol>
+
+		<h3><a name="credits">II. Credits</a></h3>
+
+		<p>Within this template I've used third party scripts. Thanks to all those authors!</p>
+
+		<ol class="content-list">
+
+		<li>Scripts</li>
+
+		<p><a href="http://www.jquery.com">jQuery Framework</a> with <a href="http://gmap3.net/">gMap3</a>, <a href="http://fancyapps.com/fancybox/">Fancybox</a> Plugin, <a href="http://tweet.seaofclouds.com/">jQuery Tweet</a> and the awesome <a href="http://noraesae.github.com/perfect-scrollbar/">perfect-scrollbar</a> Plugin.</p>
+		<p>For the map: <a href="https://developers.google.com/maps/">Google Maps API</a></p>
+
+		<li>Pictures</li>
+
+		<p>Thanks to <a href="http://www.flickr.com/photos/theilluminated/">Jon Ashorn</a> and <a href="http://www.flickr.com/photos/nelsonfelix/">Nelson Felix Giga</a> for the portfolio images.<br>
+		<p>Nonetheless thanks to <a href="https://www.flickr.com/photos/themuuj/2198718319/sizes/o/in/photostream/">TheMuuj</a> for the cool background image!</p>
+
+		<li>Fonts</li>
+
+		<p>Body Font: <a href="http://www.google.com/webfonts/specimen/Lato">Lato</a>; Icons: <a href="http://www.entypo.com/">Entypo</a></p>
+
+		</ol>
+
+		<p>If you have further questions visit the Themeforest item site and post it in the comments or write me directly via my <a href="http://themeforest.net/user/nilz_w">Themeforest profile</a></p>
+
+		</section>
+
+
+
+	</div>
+	
+</body>
+</html>

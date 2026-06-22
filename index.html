@@ -22,44 +22,188 @@
     <!-- google fonts-->
     <link href='http://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
+    <style>
+      /* Additional styles for the new layout */
+      .hero {
+        text-align: center;
+        padding: 60px 20px;
+        background: #f8f8f8;
+        margin-bottom: 40px;
+      }
+      
+      .hero h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        color: #e34c26; /* Orange color from your theme */
+      }
+      
+      .hero p {
+        font-size: 1.2em;
+        max-width: 700px;
+        margin: 0 auto 30px;
+        line-height: 1.6;
+      }
+      
+      .btn {
+        display: inline-block;
+        padding: 12px 30px;
+        background: #e34c26;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: bold;
+        transition: background 0.3s;
+      }
+      
+      .btn:hover {
+        background: #c0401e;
+      }
+      
+      .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 20px 40px;
+      }
+      
+      .feature {
+        flex: 1;
+        min-width: 300px;
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #eee;
+        border-radius: 4px;
+      }
+      
+      .feature h2 {
+        color: #e34c26;
+        margin-bottom: 15px;
+      }
+      
+      .feature ul {
+        padding-left: 20px;
+      }
+      
+      .feature li {
+        margin-bottom: 10px;
+      }
+      
+      .feature a {
+        color: #e34c26;
+        text-decoration: none;
+      }
+      
+      .feature a:hover {
+        text-decoration: underline;
+      }
+      
+      .section {
+        padding: 40px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      
+      .section h2 {
+        text-align: center;
+        font-size: 2em;
+        margin-bottom: 30px;
+        color: #333;
+      }
+      
+      footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 30px 20px;
+        margin-top: 40px;
+      }
+      
+      @media (max-width: 768px) {
+        .features {
+          flex-direction: column;
+        }
+        
+        .hero h1 {
+          font-size: 2em;
+        }
+      }
+    </style>
+
   </head>
   <body>
 
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Edham Arief Dawillah</h1>
+      <p>Welcome to my personal website. I'm passionate about technology, innovation, and sharing knowledge with others. This site serves as a hub for my professional work and personal interests.</p>
+      <a href="#about" class="btn">Learn More About Me</a>
+    </section>
+
+    <!-- Main Content -->
     <div class="container">
-      <div class="show-info-mobile"><span class="icon-menu"></span></div>
-      <ul class="tab-list">
-        <li class="tab-about">
-          <div class="grid">
-            <div class="row">
-              <!--Introduction -->
-              <h1 class="site-title"><a name="about">About Me</a></h1>
-              <div class="g-1">
-                <p class="introduction">
-                  Hello! I'm Edham Arief Dawillah, and this is my personal website.<br><br>
-                  
-                  I'm passionate about technology and sharing knowledge with others. 
-                  This site serves as a hub for my professional work and personal interests.<br><br>
-                  
-                  You can connect with me through:
-                  <ul>
-                    <li>Email - <a style="color: #ccc" href="mailto:edham.arief@gmail.com">edham dot arief at gmail dot com</a></li>
-                    <li>Twitter - <a style="color: #ccc" href="https://twitter.com/edham_arief">@edham_arief</a></li>
-                    <li>LinkedIn - <a style="color: #ccc" href="https://linkedin.com/in/edhamarief/">Add me</a></li>
-                  </ul>
-                  
-                  Feel free to reach out if you'd like to collaborate or just say hello!
-                </p>
-              </div>
-              
-              <!-- Profile Image -->
-              <div class="g-1" style="text-align: center; margin-top: 20px;">
-                <img src="images/avatar.jpg" alt="Edham Arief Dawillah" style="border-radius: 50%; max-width: 200px;">
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
+      <!-- Features/Sections -->
+      <section class="features">
+        <div class="feature">
+          <h2><span class="icon-docs"></span> About Me</h2>
+          <p>Learn more about my background, education, and professional experience.</p>
+          <ul>
+            <li>Software Developer with expertise in web technologies</li>
+            <li>Based in Kota Kinabalu, Sabah, Malaysia</li>
+            <li>Passionate about open source projects</li>
+          </ul>
+        </div>
+        
+        <div class="feature">
+          <h2><span class="icon-github"></span> Projects</h2>
+          <p>Explore my latest projects and contributions to the open source community.</p>
+          <ul>
+            <li>Web development projects using modern frameworks</li>
+            <li>GitHub repositories with source code</li>
+            <li>Technical documentation and tutorials</li>
+          </ul>
+        </div>
+        
+        <div class="feature">
+          <h2><span class="icon-mail"></span> Connect</h2>
+          <p>Get in touch with me through various channels.</p>
+          <ul>
+            <li>Email: <a href="mailto:edham.arief@gmail.com">edham.arief@gmail.com</a></li>
+            <li>Twitter: <a href="https://twitter.com/edham_arief">@edham_arief</a></li>
+            <li>LinkedIn: <a href="https://linkedin.com/in/edthix/">Add me</a></li>
+          </ul>
+        </div>
+      </section>
+      
+      <!-- About Section -->
+      <section class="section" id="about">
+        <h2>About Me</h2>
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+          <img src="images/avatar.jpg" alt="Edham Arief Dawillah" style="border-radius: 50%; max-width: 200px; margin-bottom: 20px;">
+          <p>Hello! I'm Edham Arief Dawillah, a technology enthusiast based in Kota Kinabalu, Sabah, Malaysia. I'm passionate about creating innovative solutions through code and sharing knowledge with the developer community.</p>
+          <p>With experience in web development and open source projects, I enjoy tackling complex challenges and learning new technologies. This website serves as a showcase of my work and a platform for connecting with like-minded individuals.</p>
+          <p>Feel free to explore my projects, read my technical writings, or get in touch if you'd like to collaborate on something interesting!</p>
+        </div>
+      </section>
+      
+      <!-- Calendar Section -->
+      <section class="section">
+        <h2>My Schedule</h2>
+        <div style="text-align: center;">
+          <p>Check out my availability and schedule meetings with me:</p>
+          <a href="calendar.html" class="btn">View My Calendar</a>
+        </div>
+      </section>
     </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Edham Arief Dawillah. All rights reserved.</p>
+      <p>
+        <a href="mailto:edham.arief@gmail.com" style="color: white; margin: 0 10px;">Email</a>
+        <a href="https://twitter.com/edham_arief" style="color: white; margin: 0 10px;">Twitter</a>
+        <a href="https://linkedin.com/in/edthix/" style="color: white; margin: 0 10px;">LinkedIn</a>
+      </p>
+    </footer>
 
     <!-- including js -->
     <script type="text/javascript" src="js/jquery.min.js"></script>

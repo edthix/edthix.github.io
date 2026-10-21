@@ -60,6 +60,40 @@ Then open <http://localhost:8000>.
 The static site is published with GitHub Pages from the `main` branch and
 served on **dawillah.com** via `CNAME`.
 
+## Changelog
+
+### 2026-10-22 — Hyperspace rebuild and cleanup
+
+- **Theme** (`8d2fb77`): replaced the Escape Velocity layout with an original
+  Hyperspace-inspired design — fixed rail navigation, full-viewport orbital
+  hero, violet/magenta cosmic palette, glass cards, gradient display type and
+  scroll-reveal rhythm.
+- **Motion and atmosphere** (`8d2fb77`): added a hand-written canvas starfield
+  with twinkle, pointer parallax and shooting stars, plus drifting nebulae and
+  film grain. All motion respects `prefers-reduced-motion`.
+- **Content** (`8d2fb77`): rewrote the site around publicly available profile
+  information — Mindvalley, Kinabalu Coders, RoboNeo, six public repositories,
+  a journey timeline and contact details.
+- **Metadata** (`8d2fb77`): added a favicon, Open Graph and Twitter card
+  metadata, Person JSON-LD, an image preload and accessible social labels.
+- **Accessibility** (`8d2fb77`): added a skip link, focus styles, reduced-motion
+  support, inert page content behind the mobile menu and AA-conscious contrast.
+- **Privacy** (`8d2fb77`, `eb1ed1c`): removed the embedded personal Google
+  Calendar page and stale X/RoboNeo links. No phone number, physical address or
+  other private data is published.
+- **Cleanup** (`eb1ed1c`): removed the superseded Escape Velocity-era pages,
+  unused theme CSS, Fontello and Fancybox assets, and the vulnerable jQuery.
+- **Deployment** (`e877719`): renamed the default branch `master` → `main`,
+  repointed GitHub Pages at `main`, updated local branch tracking and
+  documented the branch in this README.
+- **Security**: dismissed the two jQuery Dependabot alerts as `not_used` once
+  the vulnerable file had been deleted; no open alerts remain.
+
+### Earlier
+
+- `d5490f2` — previous Escape Velocity-based design, preserved in git history
+  alongside the site's earlier iterations.
+
 ## Content & privacy
 
 The site publishes only publicly available professional information: full name,

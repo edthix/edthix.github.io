@@ -1,258 +1,720 @@
-<!DOCTYPE HTML>
-<!--
-	Escape Velocity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Edham Arief Dawillah - Personal Website</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="homepage is-preload">
-		<div id="page-wrapper">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Edham Arief Dawillah — Data Engineer &amp; Community Builder</title>
+	<meta name="description" content="Edham Arief Dawillah is a data engineer at Mindvalley in Kota Kinabalu, building data platforms on Google Cloud — and co-founder of Kinabalu Coders and RoboNeo.">
+	<meta name="author" content="Edham Arief Dawillah">
+	<meta name="theme-color" content="#07030e">
+	<link rel="canonical" href="https://dawillah.com/">
 
-			<!-- Header -->
-				<section id="header" class="wrapper">
+	<!-- Open Graph -->
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Edham Arief Dawillah">
+	<meta property="og:title" content="Edham Arief Dawillah — Data Engineer &amp; Community Builder">
+	<meta property="og:description" content="Data platforms on Google Cloud, and a decade of building developer and maker communities in Sabah, Malaysia.">
+	<meta property="og:url" content="https://dawillah.com/">
+	<meta property="og:image" content="https://dawillah.com/images/avatar.jpg">
+	<meta property="og:image:alt" content="Edham Arief Dawillah">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Edham Arief Dawillah — Data Engineer &amp; Community Builder">
+	<meta name="twitter:description" content="Data platforms on Google Cloud, and a decade of building developer and maker communities in Sabah, Malaysia.">
+	<meta name="twitter:image" content="https://dawillah.com/images/avatar.jpg">
 
-					<!-- Logo -->
-						<div id="logo">
-							<h1><a href="index.html">Edham Arief Dawillah</a></h1>
-							<p>Personal Website & Portfolio</p>
+	<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+	<link rel="preload" as="image" href="images/avatar.jpg">
+	<link rel="apple-touch-icon" href="images/avatar.jpg">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script>document.documentElement.classList.add('js');</script>
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "Edham Arief Dawillah",
+		"url": "https://dawillah.com/",
+		"jobTitle": "Data Engineer",
+		"email": "mailto:edham.arief@gmail.com",
+		"worksFor": { "@type": "Organization", "name": "Mindvalley", "url": "https://www.mindvalley.com/" },
+		"address": { "@type": "PostalAddress", "addressLocality": "Kota Kinabalu", "addressRegion": "Sabah", "addressCountry": "MY" },
+		"knowsAbout": ["Data Engineering", "Google Cloud Platform", "Terraform", "dbt", "Apache Airflow", "Software Architecture"],
+		"sameAs": [
+			"https://github.com/edthix",
+			"https://www.linkedin.com/in/edhamarief/",
+			"https://medium.com/@edhamarief",
+			"https://www.instagram.com/edham_arief/"
+		]
+	}
+	</script>
+</head>
+<body>
+
+	<a class="skip-link" href="#main">Skip to content</a>
+
+	<!-- Atmosphere -->
+	<div class="backdrop" aria-hidden="true">
+		<canvas id="starfield"></canvas>
+		<div class="nebula nebula--a"></div>
+		<div class="nebula nebula--b"></div>
+		<div class="nebula nebula--c"></div>
+		<div class="grid-overlay"></div>
+		<div class="grain"></div>
+	</div>
+
+	<!-- Icon sprite -->
+	<svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+		<symbol id="i-github" viewBox="0 0 24 24">
+			<path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+		</symbol>
+		<symbol id="i-linkedin" viewBox="0 0 24 24">
+			<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+		</symbol>
+		<symbol id="i-medium" viewBox="0 0 24 24">
+			<path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75S24 8.83 24 12z"/>
+		</symbol>
+		<symbol id="i-instagram" viewBox="0 0 24 24">
+			<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.88z"/>
+		</symbol>
+		<symbol id="i-mail" viewBox="0 0 24 24">
+			<rect x="3" y="5.5" width="18" height="13" rx="2.5"/>
+			<path d="m4 7 8 5.8L20 7"/>
+		</symbol>
+		<symbol id="i-arrow-up-right" viewBox="0 0 24 24">
+			<path d="M7 17 17 7M8.5 7H17v8.5"/>
+		</symbol>
+		<symbol id="i-arrow-down" viewBox="0 0 24 24">
+			<path d="M12 4v16m0 0 6-6m-6 6-6-6"/>
+		</symbol>
+		<symbol id="i-copy" viewBox="0 0 24 24">
+			<rect x="9" y="9" width="11" height="11" rx="2.5"/>
+			<path d="M15 5.5H6.5A2.5 2.5 0 0 0 4 8v8.5"/>
+		</symbol>
+		<symbol id="i-check" viewBox="0 0 24 24">
+			<path d="m5 12.5 4.5 4.5L19 7"/>
+		</symbol>
+		<symbol id="i-pin" viewBox="0 0 24 24">
+			<path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/>
+			<circle cx="12" cy="10" r="2.5"/>
+		</symbol>
+		<symbol id="i-data" viewBox="0 0 24 24">
+			<ellipse cx="12" cy="5.5" rx="8" ry="3"/>
+			<path d="M4 5.5v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/>
+			<path d="M4 11.5v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6"/>
+		</symbol>
+		<symbol id="i-cloud" viewBox="0 0 24 24">
+			<path d="M7.5 18.5h9.25a4.25 4.25 0 0 0 .6-8.46A6.25 6.25 0 0 0 5.1 9.2 4.65 4.65 0 0 0 7.5 18.5Z"/>
+			<path d="M9 14.5h6"/>
+		</symbol>
+		<symbol id="i-code" viewBox="0 0 24 24">
+			<path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/>
+		</symbol>
+		<symbol id="i-users" viewBox="0 0 24 24">
+			<circle cx="9" cy="8" r="3.25"/>
+			<path d="M2.75 20a6.25 6.25 0 0 1 12.5 0"/>
+			<path d="M16 4.75a3.25 3.25 0 0 1 0 6.5M17.5 14.2A6.25 6.25 0 0 1 21.25 20"/>
+		</symbol>
+		<symbol id="i-chip" viewBox="0 0 24 24">
+			<rect x="7" y="7" width="10" height="10" rx="2.5"/>
+			<path d="M10 2.5v3M14 2.5v3M10 18.5v3M14 18.5v3M2.5 10h3M2.5 14h3M18.5 10h3M18.5 14h3"/>
+			<rect x="10.5" y="10.5" width="3" height="3" rx=".75"/>
+		</symbol>
+		<symbol id="i-book" viewBox="0 0 24 24">
+			<path d="M12 6.75C10.4 5.1 8.35 4.4 5.75 4.4H3.5v14.2h3.1c2.1 0 3.9.55 5.4 2.05 1.5-1.5 3.3-2.05 5.4-2.05h3.1V4.4h-2.25c-2.6 0-4.65.7-6.25 2.35Z"/>
+			<path d="M12 6.75v13.9"/>
+		</symbol>
+	</svg>
+
+	<div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+
+	<!-- Fixed rail (desktop) -->
+	<aside class="rail" aria-label="Site navigation">
+		<a class="brand" href="#top" aria-label="Edham Arief Dawillah — back to top">
+			<span class="brand__mark" aria-hidden="true">
+				<svg viewBox="0 0 44 44" focusable="false">
+					<defs>
+						<linearGradient id="markGrad" x1="0" y1="0" x2="1" y2="1">
+							<stop offset="0" stop-color="#c4b5fd"/>
+							<stop offset=".55" stop-color="#a78bfa"/>
+							<stop offset="1" stop-color="#e879f9"/>
+						</linearGradient>
+					</defs>
+					<circle cx="22" cy="22" r="19.5" fill="none" stroke="url(#markGrad)" stroke-width="1.1" opacity=".65"/>
+					<ellipse cx="22" cy="22" rx="17" ry="7" fill="none" stroke="url(#markGrad)" stroke-width="1.1" transform="rotate(-28 22 22)" opacity=".9"/>
+					<circle cx="22" cy="22" r="4.2" fill="url(#markGrad)"/>
+					<circle cx="37" cy="11" r="1.8" fill="#f5f3ff"/>
+				</svg>
+			</span>
+			<span class="brand__text">
+				<strong>Edham Arief</strong>
+				<span>Dawillah</span>
+			</span>
+		</a>
+
+		<nav class="rail-nav" aria-label="Primary">
+			<a href="#about" data-nav="about"><span class="rail-nav__num">01</span><span>About</span></a>
+			<a href="#expertise" data-nav="expertise"><span class="rail-nav__num">02</span><span>Expertise</span></a>
+			<a href="#work" data-nav="work"><span class="rail-nav__num">03</span><span>Work</span></a>
+			<a href="#journey" data-nav="journey"><span class="rail-nav__num">04</span><span>Journey</span></a>
+			<a href="#contact" data-nav="contact"><span class="rail-nav__num">05</span><span>Contact</span></a>
+		</nav>
+
+		<div class="rail-footer">
+			<ul class="social-inline" aria-label="Social profiles">
+				<li><a href="https://github.com/edthix" target="_blank" rel="me noopener" aria-label="GitHub — edthix"><svg class="icon icon--brand" aria-hidden="true" focusable="false"><use href="#i-github"/></svg></a></li>
+				<li><a href="https://www.linkedin.com/in/edhamarief/" target="_blank" rel="me noopener" aria-label="LinkedIn — Edham Arief Dawillah"><svg class="icon icon--brand" aria-hidden="true" focusable="false"><use href="#i-linkedin"/></svg></a></li>
+				<li><a href="https://medium.com/@edhamarief" target="_blank" rel="me noopener" aria-label="Medium — @edhamarief"><svg class="icon icon--brand" aria-hidden="true" focusable="false"><use href="#i-medium"/></svg></a></li>
+				<li><a href="https://www.instagram.com/edham_arief/" target="_blank" rel="me noopener" aria-label="Instagram — @edham_arief"><svg class="icon icon--brand" aria-hidden="true" focusable="false"><use href="#i-instagram"/></svg></a></li>
+			</ul>
+			<div class="rail-meta">
+				<p>5.98°N / 116.07°E</p>
+				<p><span class="pulse-dot"></span> KK <span id="clock" class="rail-clock">--:--</span> <span class="rail-meta__muted">GMT+8</span></p>
+			</div>
+		</div>
+	</aside>
+
+	<!-- Top bar (mobile / tablet) -->
+	<header class="topbar" id="topbar">
+		<a class="brand brand--compact" href="#top" aria-label="Edham Arief Dawillah — back to top">
+			<span class="brand__mark" aria-hidden="true">
+				<svg viewBox="0 0 44 44" focusable="false">
+					<circle cx="22" cy="22" r="19.5" fill="none" stroke="#a78bfa" stroke-width="1.1" opacity=".65"/>
+					<ellipse cx="22" cy="22" rx="17" ry="7" fill="none" stroke="#c4b5fd" stroke-width="1.1" transform="rotate(-28 22 22)" opacity=".9"/>
+					<circle cx="22" cy="22" r="4.2" fill="#c4b5fd"/>
+				</svg>
+			</span>
+			<span class="brand__text"><strong>Edham Arief</strong> <span>Dawillah</span></span>
+		</a>
+		<button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+			<span></span><span></span>
+		</button>
+	</header>
+
+	<!-- Mobile menu -->
+	<div class="menu" id="menu" aria-hidden="true">
+		<div class="menu__inner">
+			<p class="eyebrow"><span class="eyebrow__num">Menu</span></p>
+			<nav class="menu-nav" aria-label="Mobile">
+				<a href="#about" data-nav="about"><span>01</span>About</a>
+				<a href="#expertise" data-nav="expertise"><span>02</span>Expertise</a>
+				<a href="#work" data-nav="work"><span>03</span>Work</a>
+				<a href="#journey" data-nav="journey"><span>04</span>Journey</a>
+				<a href="#contact" data-nav="contact"><span>05</span>Contact</a>
+			</nav>
+			<ul class="social-inline social-inline--lg" aria-label="Social profiles">
+				<li><a href="https://github.com/edthix" target="_blank" rel="me noopener" aria-label="GitHub — edthix"><svg class="icon icon--brand" aria-hidden="true" focusable="false"><use href="#i-github"/></svg></a></li>
+				<li><a href="https://www.linkedin.com/in/edhamarief/" target="_blank" rel="me noopener" aria-label="LinkedIn — Edham Arief Dawillah"><svg class="icon icon--brand" aria-hidden="true" focusable="false"><use href="#i-linkedin"/></svg></a></li>
+				<li><a href="https://medium.com/@edhamarief" target="_blank" rel="me noopener" aria-label="Medium — @edhamarief"><svg class="icon icon--brand" aria-hidden="true" focusable="false"><use href="#i-medium"/></svg></a></li>
+				<li><a href="https://www.instagram.com/edham_arief/" target="_blank" rel="me noopener" aria-label="Instagram — @edham_arief"><svg class="icon icon--brand" aria-hidden="true" focusable="false"><use href="#i-instagram"/></svg></a></li>
+			</ul>
+			<p class="menu__meta">Kota Kinabalu, Sabah · GMT+8</p>
+		</div>
+	</div>
+
+	<main id="main" tabindex="-1">
+
+		<!-- Hero -->
+		<section class="hero" id="top">
+			<div class="shell">
+				<div class="hero-grid">
+					<div class="hero-copy">
+						<p class="status">
+							<span class="pulse-dot"></span>
+							Data Engineer at Mindvalley
+						</p>
+
+						<h1 class="hero-title">
+							<span class="hero-title__line">Edham Arief</span>
+							<span class="hero-title__line hero-title__line--accent">Dawillah</span>
+						</h1>
+
+						<p class="hero-lede">
+							I build the data platforms and pipelines that make information
+							trustworthy — mostly on Google Cloud, mostly out of sight.
+							The rest of the time I&rsquo;m helping Sabah&rsquo;s developer
+							and maker communities grow.
+						</p>
+
+						<div class="hero-actions">
+							<a class="btn btn--primary" href="#work">
+								See selected work
+								<svg class="icon" aria-hidden="true" focusable="false""><use href="#i-arrow-up-right"/></svg>
+							</a>
+							<a class="btn btn--ghost" href="#contact">Get in touch</a>
 						</div>
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li class="current"><a href="index.html">Home</a></li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#contact">Contact</a></li>
-							</ul>
-						</nav>
-
-				</section>
-
-			<!-- Intro -->
-				<section id="intro" class="wrapper style1">
-					<div class="title">Welcome</div>
-					<div class="container">
-						<p class="style1">Technology enthusiast and developer</p>
-						<p class="style2">
-							Passionate about creating innovative solutions<br class="mobile-hide" />
-							through code and technology
-						</p>
-						<p class="style3">I'm a software developer based in Kota Kinabalu, Sabah, Malaysia, focused on web technologies and open source projects.</p>
-						<ul class="actions">
-							<li><a href="#about" class="button style3 large">Learn More</a></li>
+						<ul class="hero-facts">
+							<li><b>15+</b> years in software</li>
+							<li><b>GCP</b> data platforms</li>
+							<li><b>Sabah</b> community builder</li>
 						</ul>
 					</div>
-				</section>
 
-			<!-- Main -->
-				<section id="main" class="wrapper style2">
-					<div class="title">About Me</div>
-					<div class="container">
-
-						<!-- Image -->
-							<a href="#" class="image featured">
-								<img src="images/avatar.jpg" alt="Edham Arief Dawillah" style="border-radius: 50%; max-width: 300px;" />
-							</a>
-
-						<!-- Features -->
-							<section id="features">
-								<header class="style1">
-									<h2>Professional Skills & Expertise</h2>
-									<p>Areas where I specialize and contribute</p>
-								</header>
-								<div class="feature-list">
-									<div class="row">
-										<div class="col-6 col-12-medium">
-											<section>
-												<h3 class="icon fa-code">Web Development</h3>
-												<p>Expertise in modern web technologies including HTML5, CSS3, JavaScript, and frameworks like React and Vue.js.</p>
-											</section>
-										</div>
-										<div class="col-6 col-12-medium">
-											<section>
-												<h3 class="icon fa-github">Open Source</h3>
-												<p>Active contributor to open source projects with a focus on creating accessible and reusable code.</p>
-											</section>
-										</div>
-										<div class="col-6 col-12-medium">
-											<section>
-												<h3 class="icon fa-mobile">Responsive Design</h3>
-												<p>Creating websites and applications that work beautifully across all devices and screen sizes.</p>
-											</section>
-										</div>
-										<div class="col-6 col-12-medium">
-											<section>
-												<h3 class="icon fa-lightbulb">Problem Solving</h3>
-												<p>Approaching complex challenges with analytical thinking and creative solutions.</p>
-											</section>
-										</div>
-										<div class="col-6 col-12-medium">
-											<section>
-												<h3 class="icon fa-users">Collaboration</h3>
-												<p>Working effectively with teams and communities to build better products together.</p>
-											</section>
-										</div>
-										<div class="col-6 col-12-medium">
-											<section>
-												<h3 class="icon fa-book">Continuous Learning</h3>
-												<p>Always exploring new technologies and methodologies to stay current in the field.</p>
-											</section>
-										</div>
-									</div>
-								</div>
-								<ul class="actions special">
-									<li><a href="#contact" class="button style1 large">Get In Touch</a></li>
-									<li><a href="https://github.com/edthix" class="button style2 large">View My GitHub</a></li>
-								</ul>
-							</section>
-
-					</div>
-				</section>
-
-			<!-- Highlights -->
-				<section id="highlights" class="wrapper style3">
-					<div class="title">Projects & Interests</div>
-					<div class="container">
-						<div class="row aln-center">
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/avatar.jpg" alt="Web Development" style="border-radius: 50%;" /></a>
-									<h3><a href="#">Web Development</a></h3>
-									<p>Creating modern, responsive websites and applications using the latest web technologies and frameworks.</p>
-									<ul class="actions">
-										<li><a href="https://github.com/edthix" class="button style1">View Projects</a></li>
-									</ul>
-								</section>
+					<div class="hero-visual">
+						<div class="halo" aria-hidden="true"></div>
+						<div class="portrait-wrap">
+							<span class="orbit orbit--one" aria-hidden="true"><i></i></span>
+							<span class="orbit orbit--two" aria-hidden="true"><i></i></span>
+							<span class="orbit orbit--three" aria-hidden="true"></span>
+							<div class="portrait">
+								<img src="images/avatar.jpg" alt="Edham Arief Dawillah" width="400" height="400" fetchpriority="high">
 							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/avatar.jpg" alt="Open Source" style="border-radius: 50%;" /></a>
-									<h3><a href="#">Open Source</a></h3>
-									<p>Contributing to the developer community through open source projects and sharing knowledge.</p>
-									<ul class="actions">
-										<li><a href="https://github.com/edthix" class="button style1">View Contributions</a></li>
-									</ul>
-								</section>
-							</div>
-							<div class="col-4 col-12-medium">
-								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/avatar.jpg" alt="Technology" style="border-radius: 50%;" /></a>
-									<h3><a href="#">Technology</a></h3>
-									<p>Exploring emerging technologies and their applications in solving real-world problems.</p>
-									<ul class="actions">
-										<li><a href="#contact" class="button style1">Discuss Ideas</a></li>
-									</ul>
-								</section>
-							</div>
+							<span class="chip chip--bio"><span class="pulse-dot"></span> code · data · electronics</span>
+							<span class="chip chip--loc"><svg class="icon" aria-hidden="true" focusable="false""><use href="#i-pin"/></svg> Kota Kinabalu</span>
 						</div>
 					</div>
-				</section>
+				</div>
+			</div>
 
-			<!-- Footer -->
-				<section id="footer" class="wrapper" name="contact">
-					<div class="title">Get In Touch</div>
-					<div class="container">
-						<header class="style1">
-							<h2>Let's Connect</h2>
-							<p>
-								I'm always interested in new opportunities, collaborations, and conversations.<br />
-								Feel free to reach out through any of the channels below.
-							</p>
-						</header>
-						<div class="row">
-							<div class="col-6 col-12-medium">
+			<a class="scroll-cue" href="#about" aria-label="Scroll to about">
+				<span>Scroll</span>
+				<span class="scroll-cue__line" aria-hidden="true"></span>
+			</a>
+		</section>
 
-								<!-- Contact -->
-									<section class="feature-list small">
-										<div class="row">
-											<div class="col-6 col-12-small">
-												<section>
-													<h3 class="icon fa-map-marker">Location</h3>
-													<p>
-														Kota Kinabalu<br />
-														Sabah, Malaysia
-													</p>
-												</section>
-											</div>
-											<div class="col-6 col-12-small">
-												<section>
-													<h3 class="icon fa-comment">Social</h3>
-													<p>
-														<a href="https://twitter.com/edham_arief">@edham_arief</a><br />
-														<a href="https://linkedin.com/in/edthix/">LinkedIn Profile</a><br />
-														<a href="https://github.com/edthix">GitHub Profile</a>
-													</p>
-												</section>
-											</div>
-											<div class="col-6 col-12-small">
-												<section>
-													<h3 class="icon fa-envelope">Email</h3>
-													<p>
-														<a href="mailto:edham.arief@gmail.com">edham.arief@gmail.com</a>
-													</p>
-												</section>
-											</div>
-											<div class="col-6 col-12-small">
-												<section>
-													<h3 class="icon fa-phone">Phone</h3>
-													<p>
-														Available upon request
-													</p>
-												</section>
-											</div>
-										</div>
-									</section>
+		<!-- About -->
+		<section class="section" id="about">
+			<div class="shell">
+				<header class="section-head" data-reveal>
+					<p class="eyebrow"><span class="eyebrow__num">01</span> About</p>
+					<h2>Quiet infrastructure.<br><em>Loud curiosity.</em></h2>
+					<p class="section-lede">
+						For more than fifteen years I&rsquo;ve been building software,
+						designing systems and teaching people to make things — long
+						enough to prefer boring reliability over clever fragility.
+					</p>
+				</header>
 
-							</div>
-							<div class="col-6 col-12-medium">
-
-								<!-- Contact Form -->
-									<section>
-										<form method="post" action="#">
-											<div class="row gtr-50">
-												<div class="col-6 col-12-small">
-													<input type="text" name="name" id="contact-name" placeholder="Name" />
-												</div>
-												<div class="col-6 col-12-small">
-													<input type="text" name="email" id="contact-email" placeholder="Email" />
-												</div>
-												<div class="col-12">
-													<textarea name="message" id="contact-message" placeholder="Message" rows="4"></textarea>
-												</div>
-												<div class="col-12">
-													<ul class="actions">
-														<li><input type="submit" class="style1" value="Send" /></li>
-														<li><input type="reset" class="style2" value="Reset" /></li>
-													</ul>
-												</div>
-											</div>
-										</form>
-									</section>
-
-							</div>
-						</div>
-						<div id="copyright">
-							<ul>
-								<li>&copy; 2026 Edham Arief Dawillah.</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-							</ul>
+				<div class="about-grid">
+					<div class="about-copy" data-reveal>
+						<p class="about-lead">
+							I&rsquo;m a data engineer at
+							<a href="https://www.mindvalley.com/" target="_blank" rel="noopener">Mindvalley</a>,
+							where I design and operate the pipelines and cloud infrastructure
+							that turn raw data into something teams can actually trust.
+						</p>
+						<p>
+							My centre of gravity is Google Cloud — GKE, Cloud SQL and
+							Terraform — supported by dbt, Airflow and a lot of careful SQL.
+							I like systems that are observable, reproducible, and documented
+							well enough that the next person doesn&rsquo;t have to guess.
+						</p>
+						<p>
+							Outside of work I&rsquo;m a co-founder of
+							<a href="https://kinabalucoders.org/" target="_blank" rel="noopener">Kinabalu Coders</a>,
+							the Sabah Programmers and ICT Builders Association, and of
+							RoboNeo,
+							the state&rsquo;s open-category robotics competition. I&rsquo;ve
+							helped lead Raspberry Jams, open-source meetups and maker spaces
+							across Sabah for over a decade.
+						</p>
+						<div class="about-signoff">
+							<span class="about-signoff__line" aria-hidden="true"></span>
+							<p>Building for the cloud, rooted in Borneo.</p>
 						</div>
 					</div>
-				</section>
 
+					<aside class="fact-card" data-reveal data-delay="120">
+						<p class="fact-card__label">At a glance</p>
+						<dl class="facts">
+							<div class="facts__row">
+								<dt>Base</dt>
+								<dd>Kota Kinabalu, Sabah, Malaysia</dd>
+							</div>
+							<div class="facts__row">
+								<dt>Now</dt>
+								<dd>Data Engineer at Mindvalley</dd>
+							</div>
+							<div class="facts__row">
+								<dt>Focus</dt>
+								<dd>Data platforms &amp; cloud infrastructure</dd>
+							</div>
+							<div class="facts__row">
+								<dt>Stack</dt>
+								<dd>GCP · GKE · Terraform · dbt · Airflow</dd>
+							</div>
+							<div class="facts__row">
+								<dt>Also</dt>
+								<dd>Co-founder, Kinabalu Coders &amp; RoboNeo</dd>
+							</div>
+						</dl>
+						<a class="fact-card__link" href="https://github.com/edthix" target="_blank" rel="me noopener">
+							<svg class="icon icon--brand" aria-hidden="true" focusable="false"><use href="#i-github"/></svg>
+							<span>github.com/edthix</span>
+							<svg class="icon" aria-hidden="true" focusable="false""><use href="#i-arrow-up-right"/></svg>
+						</a>
+					</aside>
+				</div>
+
+				<div class="stats" data-stagger>
+					<div class="stat" data-reveal>
+						<b>15+</b>
+						<span>Years building software</span>
+					</div>
+					<div class="stat" data-reveal>
+						<b>27</b>
+						<span>Public repositories</span>
+					</div>
+					<div class="stat" data-reveal>
+						<b>2014</b>
+						<span>Kinabalu Coders co-founded</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="marquee" aria-hidden="true">
+				<div class="marquee__track">
+					<div class="marquee__group">
+						<span>Python</span><i></i><span>SQL</span><i></i><span>Google Cloud</span><i></i>
+						<span>Terraform</span><i></i><span>dbt</span><i></i><span>Airflow</span><i></i>
+						<span>Docker</span><i></i><span>Kubernetes</span><i></i><span>Clojure</span><i></i>
+						<span>Elixir</span><i></i><span>Arduino</span><i></i><span>Linux</span><i></i>
+					</div>
+					<div class="marquee__group">
+						<span>Python</span><i></i><span>SQL</span><i></i><span>Google Cloud</span><i></i>
+						<span>Terraform</span><i></i><span>dbt</span><i></i><span>Airflow</span><i></i>
+						<span>Docker</span><i></i><span>Kubernetes</span><i></i><span>Clojure</span><i></i>
+						<span>Elixir</span><i></i><span>Arduino</span><i></i><span>Linux</span><i></i>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Expertise -->
+		<section class="section" id="expertise">
+			<div class="shell">
+				<header class="section-head" data-reveal>
+					<p class="eyebrow"><span class="eyebrow__num">02</span> Expertise</p>
+					<h2>What I bring<br>to the <em>stack.</em></h2>
+					<p class="section-lede">
+						A blend of hands-on engineering, systems thinking and community
+						building — usually all in the same week.
+					</p>
+				</header>
+
+				<div class="skills" data-stagger>
+					<article class="skill" data-reveal>
+						<span class="skill__num">01</span>
+						<span class="skill__icon"><svg class="icon" aria-hidden="true" focusable="false""><use href="#i-data"/></svg></span>
+						<h3>Data pipelines</h3>
+						<p>Batch and streaming pipelines that are observable, idempotent and dull in the best way. dbt, Airflow and SQL at the core.</p>
+						<ul class="tags">
+							<li>dbt</li><li>Airflow</li><li>SQL</li>
+						</ul>
+					</article>
+
+					<article class="skill" data-reveal>
+						<span class="skill__num">02</span>
+						<span class="skill__icon"><svg class="icon" aria-hidden="true" focusable="false""><use href="#i-cloud"/></svg></span>
+						<h3>Cloud infrastructure</h3>
+						<p>GCP by default: GKE, Cloud SQL and Terraform-managed environments that can be rebuilt without drama.</p>
+						<ul class="tags">
+							<li>GCP</li><li>Terraform</li><li>Kubernetes</li>
+						</ul>
+					</article>
+
+					<article class="skill" data-reveal>
+						<span class="skill__num">03</span>
+						<span class="skill__icon"><svg class="icon" aria-hidden="true" focusable="false""><use href="#i-code"/></svg></span>
+						<h3>Software architecture</h3>
+						<p>Fifteen years of designing systems and APIs — from Clojure and Elixir experiments to production data platforms.</p>
+						<ul class="tags">
+							<li>Python</li><li>Elixir</li><li>Clojure</li>
+						</ul>
+					</article>
+
+					<article class="skill" data-reveal>
+						<span class="skill__num">04</span>
+						<span class="skill__icon"><svg class="icon" aria-hidden="true" focusable="false""><use href="#i-users"/></svg></span>
+						<h3>Developer communities</h3>
+						<p>Co-founder of Kinabalu Coders, supporting open developer and maker communities across Sabah since 2014.</p>
+						<ul class="tags">
+							<li>Community</li><li>Events</li><li>Open source</li>
+						</ul>
+					</article>
+
+					<article class="skill" data-reveal>
+						<span class="skill__num">05</span>
+						<span class="skill__icon"><svg class="icon" aria-hidden="true" focusable="false""><use href="#i-chip"/></svg></span>
+						<h3>Robotics &amp; making</h3>
+						<p>Co-founder of RoboNeo and a long-time advocate for Arduino, Raspberry Pi and hands-on STEM learning.</p>
+						<ul class="tags">
+							<li>Arduino</li><li>Raspberry Pi</li><li>IoT</li>
+						</ul>
+					</article>
+
+					<article class="skill" data-reveal>
+						<span class="skill__num">06</span>
+						<span class="skill__icon"><svg class="icon" aria-hidden="true" focusable="false""><use href="#i-book"/></svg></span>
+						<h3>Teaching &amp; mentoring</h3>
+						<p>ICT training and community workshops — helping people move from curious to capable, one project at a time.</p>
+						<ul class="tags">
+							<li>Training</li><li>Mentoring</li><li>Talks</li>
+						</ul>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- Work -->
+		<section class="section" id="work">
+			<div class="shell">
+				<header class="section-head section-head--split" data-reveal>
+					<div>
+						<p class="eyebrow"><span class="eyebrow__num">03</span> Selected work</p>
+						<h2>Things I&rsquo;ve<br><em>built &amp; shared.</em></h2>
+					</div>
+					<p class="section-lede">
+						A sample of public repositories — data plumbing, developer tools,
+						functional-language experiments and robots. More on
+						<a href="https://github.com/edthix" target="_blank" rel="me noopener">GitHub</a>.
+					</p>
+				</header>
+
+				<div class="projects" data-stagger>
+					<a class="project" href="https://github.com/edthix/openclaw" target="_blank" rel="noopener" data-reveal>
+						<span class="project__num" aria-hidden="true">01</span>
+						<span class="project__top">
+							<span class="project__kind"><i class="lang lang--violet"></i> AI tooling</span>
+							<svg class="icon project__arrow" aria-hidden="true" focusable="false"><use href="#i-arrow-up-right"/></svg>
+						</span>
+						<h3>openclaw</h3>
+						<p>A personal AI assistant that runs on any OS and any platform — built around the idea that your assistant should belong to you.</p>
+						<ul class="tags">
+							<li>AI</li><li>Automation</li><li>Tooling</li>
+						</ul>
+						<span class="project__cta">View repository <svg class="icon" aria-hidden="true" focusable="false""><use href="#i-arrow-up-right"/></svg></span>
+					</a>
+
+					<a class="project" href="https://github.com/edthix/airflow-dawillah" target="_blank" rel="noopener" data-reveal>
+						<span class="project__num" aria-hidden="true">02</span>
+						<span class="project__top">
+							<span class="project__kind"><i class="lang lang--blue"></i> Data engineering</span>
+							<svg class="icon project__arrow" aria-hidden="true" focusable="false"><use href="#i-arrow-up-right"/></svg>
+						</span>
+						<h3>airflow-dawillah</h3>
+						<p>A containerised Apache Airflow deployment for af.dawillah.com — reproducible orchestration for real data workflows.</p>
+						<ul class="tags">
+							<li>Airflow</li><li>Docker</li><li>Data pipelines</li>
+						</ul>
+						<span class="project__cta">View repository <svg class="icon" aria-hidden="true" focusable="false""><use href="#i-arrow-up-right"/></svg></span>
+					</a>
+
+					<a class="project" href="https://github.com/edthix/dbt-core" target="_blank" rel="noopener" data-reveal>
+						<span class="project__num" aria-hidden="true">03</span>
+						<span class="project__top">
+							<span class="project__kind"><i class="lang lang--amber"></i> Analytics engineering</span>
+							<svg class="icon project__arrow" aria-hidden="true" focusable="false"><use href="#i-arrow-up-right"/></svg>
+						</span>
+						<h3>dbt-core</h3>
+						<p>A working space for the dbt quickstart — modelling, testing and documenting analytical data with SQL.</p>
+						<ul class="tags">
+							<li>dbt</li><li>SQL</li><li>Analytics</li>
+						</ul>
+						<span class="project__cta">View repository <svg class="icon" aria-hidden="true" focusable="false""><use href="#i-arrow-up-right"/></svg></span>
+					</a>
+
+					<a class="project" href="https://github.com/edthix/auth0_ex" target="_blank" rel="noopener" data-reveal>
+						<span class="project__num" aria-hidden="true">04</span>
+						<span class="project__top">
+							<span class="project__kind"><i class="lang lang--purple"></i> Elixir library</span>
+							<svg class="icon project__arrow" aria-hidden="true" focusable="false"><use href="#i-arrow-up-right"/></svg>
+						</span>
+						<h3>auth0_ex</h3>
+						<p>An Elixir client library for Auth0 — authentication primitives for Elixir applications, shared with the community.</p>
+						<ul class="tags">
+							<li>Elixir</li><li>Auth0</li><li>Open source</li>
+						</ul>
+						<span class="project__cta">View repository <svg class="icon" aria-hidden="true" focusable="false""><use href="#i-arrow-up-right"/></svg></span>
+					</a>
+
+					<a class="project" href="https://github.com/edthix/themis" target="_blank" rel="noopener" data-reveal>
+						<span class="project__num" aria-hidden="true">05</span>
+						<span class="project__top">
+							<span class="project__kind"><i class="lang lang--cyan"></i> Clojure experiment</span>
+							<svg class="icon project__arrow" aria-hidden="true" focusable="false"><use href="#i-arrow-up-right"/></svg>
+						</span>
+						<h3>themis</h3>
+						<p>A task management system written in Clojure — an experiment in functional web application design.</p>
+						<ul class="tags">
+							<li>Clojure</li><li>Web</li><li>Experiment</li>
+						</ul>
+						<span class="project__cta">View repository <svg class="icon" aria-hidden="true" focusable="false""><use href="#i-arrow-up-right"/></svg></span>
+					</a>
+
+					<a class="project" href="https://github.com/edthix/roboneo2015" target="_blank" rel="noopener" data-reveal>
+						<span class="project__num" aria-hidden="true">06</span>
+						<span class="project__top">
+							<span class="project__kind"><i class="lang lang--teal"></i> Robotics</span>
+							<svg class="icon project__arrow" aria-hidden="true" focusable="false"><use href="#i-arrow-up-right"/></svg>
+						</span>
+						<h3>roboneo2015</h3>
+						<p>Arduino code from RoboNeo 2015 — the robotics competition I co-founded to spark hardware curiosity in Sabah.</p>
+						<ul class="tags">
+							<li>Arduino</li><li>Robotics</li><li>Education</li>
+						</ul>
+						<span class="project__cta">View repository <svg class="icon" aria-hidden="true" focusable="false""><use href="#i-arrow-up-right"/></svg></span>
+					</a>
+				</div>
+
+				<div class="section-foot" data-reveal>
+					<a class="btn btn--ghost" href="https://github.com/edthix?tab=repositories" target="_blank" rel="me noopener">
+						All repositories on GitHub
+						<svg class="icon" aria-hidden="true" focusable="false""><use href="#i-arrow-up-right"/></svg>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Journey -->
+		<section class="section" id="journey">
+			<div class="shell">
+				<header class="section-head" data-reveal>
+					<p class="eyebrow"><span class="eyebrow__num">04</span> Journey</p>
+					<h2>A career in<br><em>three layers.</em></h2>
+					<p class="section-lede">
+						Engineering, cloud and community — the through-line is making
+						complex things usable by more people.
+					</p>
+				</header>
+
+				<ol class="timeline">
+					<li class="timeline-item" data-reveal>
+						<span class="timeline__when">Now</span>
+						<div class="timeline__body">
+							<h3>Data Engineer <span>· Mindvalley</span></h3>
+							<p>Designing and operating data pipelines and cloud infrastructure on GCP — turning messy sources into reliable, well-modelled data for the teams that depend on it.</p>
+							<ul class="tags"><li>GCP</li><li>GKE</li><li>Terraform</li><li>dbt</li></ul>
+						</div>
+					</li>
+
+					<li class="timeline-item" data-reveal>
+						<span class="timeline__when">Since 2014</span>
+						<div class="timeline__body">
+							<h3>Co-founder <span>· Kinabalu Coders</span></h3>
+							<p>The Sabah Programmers and ICT Builders Association — a coalition of community leads, organisers and volunteers supporting developer and maker communities across the state.</p>
+							<ul class="tags"><li>Community</li><li>Events</li><li>Open source</li></ul>
+						</div>
+					</li>
+
+					<li class="timeline-item" data-reveal>
+						<span class="timeline__when">Since 2014</span>
+						<div class="timeline__body">
+							<h3>Co-founder <span>· RoboNeo</span></h3>
+							<p>Sabah&rsquo;s open-category robotics competition, first held in October 2014 and now an annual fixture for student, hobbyist and school teams.</p>
+							<ul class="tags"><li>Robotics</li><li>STEM</li><li>Making</li></ul>
+						</div>
+					</li>
+
+					<li class="timeline-item" data-reveal>
+						<span class="timeline__when">Earlier</span>
+						<div class="timeline__body">
+							<h3>Community lead <span>· Sabah Open Source Group</span></h3>
+							<p>Helping run Kota Kinabalu&rsquo;s friendly Linux user group and its mission to advocate open source and free software in Sabah.</p>
+							<ul class="tags"><li>Linux</li><li>Open source</li><li>Meetups</li></ul>
+						</div>
+					</li>
+
+					<li class="timeline-item" data-reveal>
+						<span class="timeline__when">15+ years</span>
+						<div class="timeline__body">
+							<h3>Software development, architecture &amp; ICT training</h3>
+							<p>A career spanning product engineering, systems design and technical training — now focused on data platforms and the people who build them.</p>
+							<ul class="tags"><li>Architecture</li><li>Training</li><li>Engineering</li></ul>
+						</div>
+					</li>
+				</ol>
+			</div>
+		</section>
+
+		<!-- Contact -->
+		<section class="section section--contact" id="contact">
+			<div class="shell">
+				<div class="contact-card" data-reveal>
+					<div class="contact-copy">
+						<p class="eyebrow"><span class="eyebrow__num">05</span> Contact</p>
+						<h2>Let&rsquo;s talk data,<br>communities, <em>or robots.</em></h2>
+						<p>
+							I&rsquo;m always up for a conversation about data platforms,
+							developer communities, or getting more young people into
+							hardware. Email is the fastest way to reach me.
+						</p>
+
+						<div class="email-row">
+							<a class="email-link" href="mailto:edham.arief@gmail.com">edham.arief@gmail.com</a>
+							<button class="copy-btn" id="copy-email" type="button" aria-label="Copy email address to clipboard">
+								<svg class="icon copy-btn__copy" aria-hidden="true" focusable="false"><use href="#i-copy"/></svg>
+								<svg class="icon copy-btn__check" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>
+								<span class="copy-btn__label">Copy</span>
+							</button>
+						</div>
+
+						<p class="contact-note">
+							<span class="pulse-dot"></span>
+							Kota Kinabalu · GMT+8 · open to collaborations
+						</p>
+					</div>
+
+					<div class="contact-links">
+						<p class="contact-links__label">Elsewhere</p>
+						<ul class="social-list">
+							<li>
+								<a href="https://github.com/edthix" target="_blank" rel="me noopener">
+									<svg class="icon icon--brand" aria-hidden="true" focusable="false"><use href="#i-github"/></svg>
+									<span class="social-list__name">GitHub</span>
+									<span class="social-list__handle">@edthix</span>
+									<svg class="icon social-list__arrow" aria-hidden="true" focusable="false"><use href="#i-arrow-up-right"/></svg>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/edhamarief/" target="_blank" rel="me noopener">
+									<svg class="icon icon--brand" aria-hidden="true" focusable="false"><use href="#i-linkedin"/></svg>
+									<span class="social-list__name">LinkedIn</span>
+									<span class="social-list__handle">edhamarief</span>
+									<svg class="icon social-list__arrow" aria-hidden="true" focusable="false"><use href="#i-arrow-up-right"/></svg>
+								</a>
+							</li>
+							<li>
+								<a href="https://medium.com/@edhamarief" target="_blank" rel="me noopener">
+									<svg class="icon icon--brand" aria-hidden="true" focusable="false"><use href="#i-medium"/></svg>
+									<span class="social-list__name">Medium</span>
+									<span class="social-list__handle">@edhamarief</span>
+									<svg class="icon social-list__arrow" aria-hidden="true" focusable="false"><use href="#i-arrow-up-right"/></svg>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/edham_arief/" target="_blank" rel="me noopener">
+									<svg class="icon icon--brand" aria-hidden="true" focusable="false"><use href="#i-instagram"/></svg>
+									<span class="social-list__name">Instagram</span>
+									<span class="social-list__handle">@edham_arief</span>
+									<svg class="icon social-list__arrow" aria-hidden="true" focusable="false"><use href="#i-arrow-up-right"/></svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="site-footer">
+		<div class="shell footer-inner">
+			<p>&copy; <span id="year">2026</span> Edham Arief Dawillah</p>
+			<p class="footer-note">Data platforms &amp; community, from Sabah.</p>
+			<p class="footer-credit">
+				Inspired by <a href="https://html5up.net/hyperspace" target="_blank" rel="noopener">Hyperspace</a>
+				· <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+			</p>
 		</div>
+	</footer>
 
-		<!-- Scripts -->
-			<script src="js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<div class="toast" id="toast" role="status" aria-live="polite">Email copied to clipboard</div>
 
-	</body>
+	<script src="assets/js/site.js" defer></script>
+</body>
 </html>

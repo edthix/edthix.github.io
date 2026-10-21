@@ -57,8 +57,8 @@ Then open <http://localhost:8000>.
 
 ## Deployment
 
-The static site is published with GitHub Pages from the repository's default
-branch and served on **dawillah.com** via `CNAME`.
+The static site is published with GitHub Pages from the `main` branch and
+served on **dawillah.com** via `CNAME`.
 
 ## Content & privacy
 

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   dawillah.com — site.js
+   dawillah.com / site.js
    Vanilla JS: starfield, scroll reveals, nav spy, mobile menu,
    pointer spotlights, copy-to-clipboard, local clock.
    ========================================================================== */
@@ -342,7 +342,7 @@
 					markCopied();
 					showToast("Email copied to clipboard");
 				} else {
-					showToast("Copy blocked — use the email link");
+					showToast("Copy blocked. Use the email link");
 				}
 			};
 

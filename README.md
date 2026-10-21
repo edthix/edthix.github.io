@@ -1,6 +1,6 @@
 # dawillah.com
 
-The personal website of **Edham Arief Dawillah** — data engineer at
+The personal website of **Edham Arief Dawillah**, a data engineer at
 [Mindvalley](https://www.mindvalley.com/), co-founder of
 [Kinabalu Coders](https://kinabalucoders.org/) and RoboNeo, based in Kota
 Kinabalu, Sabah, Malaysia.
@@ -11,7 +11,7 @@ A custom theme, **“Hyperspace, reimagined”**, built as a modern reinterpreta
 of [HTML5 UP's Hyperspace](https://html5up.net/hyperspace):
 
 - A fixed left rail with letter-spaced, numbered navigation and a gradient
-  active indicator — the template's signature sidebar, rebuilt.
+  active indicator: the template's signature sidebar, rebuilt.
 - A full-viewport intro with an orbital portrait, gradient display type and
   layered depth, echoing Hyperspace's full-screen hero.
 - Hyperspace's violet (`#5e42a6`) and magenta (`#b74e91`) DNA, pushed into a
@@ -63,17 +63,17 @@ served on **dawillah.com** via `CNAME`.
 
 ## Changelog
 
-### 2026-10-22 — Hyperspace rebuild and cleanup
+### 2026-10-22: Hyperspace rebuild and cleanup
 
 - **Theme** (`8d2fb77`): replaced the Escape Velocity layout with an original
-  Hyperspace-inspired design — fixed rail navigation, full-viewport orbital
+  Hyperspace-inspired design: fixed rail navigation, full-viewport orbital
   hero, violet/magenta cosmic palette, glass cards, gradient display type and
   scroll-reveal rhythm.
 - **Motion and atmosphere** (`8d2fb77`): added a hand-written canvas starfield
   with twinkle, pointer parallax and shooting stars, plus drifting nebulae and
   film grain. All motion respects `prefers-reduced-motion`.
 - **Content** (`8d2fb77`): rewrote the site around publicly available profile
-  information — Mindvalley, Kinabalu Coders, RoboNeo, six public repositories,
+  information: Mindvalley, Kinabalu Coders, RoboNeo, six public repositories,
   a journey timeline and contact details.
 - **Metadata** (`8d2fb77`): added a favicon, Open Graph and Twitter card
   metadata, Person JSON-LD, an image preload and accessible social labels.
@@ -98,7 +98,7 @@ served on **dawillah.com** via `CNAME`.
 
 ### Earlier
 
-- `d5490f2` — previous Escape Velocity-based design, preserved in git history
+- `d5490f2`: previous Escape Velocity-based design, preserved in git history
   alongside the site's earlier iterations.
 
 ## Content & privacy

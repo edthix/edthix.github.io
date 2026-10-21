@@ -88,6 +88,9 @@ served on **dawillah.com** via `CNAME`.
   documented the branch in this README.
 - **Security**: dismissed the two jQuery Dependabot alerts as `not_used` once
   the vulnerable file had been deleted; no open alerts remain.
+- **Experience correction**: updated the experience claim from “15+ years” to
+  “23 years”, anchored to coding since 2003, across the hero, stats, about,
+  expertise and journey sections.
 
 ### Earlier
 

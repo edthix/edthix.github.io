@@ -30,7 +30,8 @@ of [HTML5 UP's Hyperspace](https://html5up.net/hyperspace):
 - Semantic HTML5 and a single hand-written CSS file (custom properties, grid,
   flexbox, gradients, masks).
 - Dependency-free vanilla JavaScript for interaction and the starfield.
-- No build step, no framework, no tracking, no cookies.
+- No build step and no framework. Google Analytics 4 is the only third-party
+  service, loaded asynchronously for aggregate traffic measurement.
 - Typefaces served by Google Fonts with system fallbacks.
 
 ## Structure
@@ -91,6 +92,9 @@ served on **dawillah.com** via `CNAME`.
 - **Experience correction**: updated the experience claim from “15+ years” to
   “23 years”, anchored to coding since 2003, across the hero, stats, about,
   expertise and journey sections.
+- **Analytics**: added Google Analytics 4 (`G-SHN42CP9RW`) with the standard
+  asynchronous gtag.js snippet, a preconnect for `googletagmanager.com`, and
+  the analytics note below.
 
 ### Earlier
 
@@ -102,6 +106,13 @@ served on **dawillah.com** via `CNAME`.
 The site publishes only publicly available professional information: full name,
 email address, city, employer, community roles, social profiles and public
 repositories.
+
+## Analytics
+
+Google Analytics 4 (`G-SHN42CP9RW`) is loaded asynchronously from
+`googletagmanager.com` for aggregate traffic measurement. It may set
+first-party analytics cookies. No names, email addresses or form data are sent
+to Google Analytics.
 
 ## Credits
 

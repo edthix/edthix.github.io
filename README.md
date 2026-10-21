@@ -44,9 +44,8 @@ images/avatar.jpg       Portrait
 CNAME                   Custom domain (dawillah.com)
 ```
 
-The original experiments remain in the repository for reference:
-`index01.html`, `index02.html`, `css/`, `js/`, `font/` and
-`images/fancybox/`. They are not linked from the current site.
+Earlier iterations of the site, including the Escape Velocity-era pages, are
+preserved in the repository's git history.
 
 ## Local preview
 
